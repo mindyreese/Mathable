@@ -1,0 +1,25 @@
+{
+  "name": "mathable-server",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6",
+    "ts-node-dev": "^2.0.0",
+    "vitest": "^0.32.3",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.5.6",
+    "supertest": "^6.3.3",
+    "@types/supertest": "^2.0.12"
+  }
+}
